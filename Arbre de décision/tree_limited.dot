@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="X[2] <= 2.5\nentropy = 1.33\nsamples = 437\nvalue = [36, 203, 198]", fillcolor="#39e58105"] ;
+1 [label="X[0] <= 2.5\nentropy = 1.12\nsamples = 165\nvalue = [13, 117, 35]", fillcolor="#39e581a1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="X[1] <= 2.5\nentropy = 1.51\nsamples = 64\nvalue = [12, 28, 24]", fillcolor="#39e5811a"] ;
+1 -> 2 ;
+3 [label="entropy = 1.21\nsamples = 23\nvalue = [6, 2, 15]", fillcolor="#8139e587"] ;
+2 -> 3 ;
+4 [label="entropy = 1.3\nsamples = 41\nvalue = [6, 26, 9]", fillcolor="#39e58187"] ;
+2 -> 4 ;
+5 [label="X[1] <= 1.5\nentropy = 0.58\nsamples = 101\nvalue = [1, 89, 11]", fillcolor="#39e581dd"] ;
+1 -> 5 ;
+6 [label="entropy = 1.3\nsamples = 14\nvalue = [1, 6, 7]", fillcolor="#8139e520"] ;
+5 -> 6 ;
+7 [label="entropy = 0.27\nsamples = 87\nvalue = [0, 83, 4]", fillcolor="#39e581f3"] ;
+5 -> 7 ;
+8 [label="X[3] <= 2.5\nentropy = 1.27\nsamples = 272\nvalue = [23, 86, 163]", fillcolor="#8139e56a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="X[0] <= 1.5\nentropy = 1.33\nsamples = 110\nvalue = [11, 62, 37]", fillcolor="#39e58157"] ;
+8 -> 9 ;
+10 [label="entropy = 0.99\nsamples = 27\nvalue = [3, 3, 21]", fillcolor="#8139e5bf"] ;
+9 -> 10 ;
+11 [label="entropy = 1.13\nsamples = 83\nvalue = [8, 59, 16]", fillcolor="#39e581a4"] ;
+9 -> 11 ;
+12 [label="X[0] <= 2.5\nentropy = 0.97\nsamples = 162\nvalue = [12, 24, 126]", fillcolor="#8139e5bc"] ;
+8 -> 12 ;
+13 [label="entropy = 0.11\nsamples = 66\nvalue = [0, 1, 65]", fillcolor="#8139e5fb"] ;
+12 -> 13 ;
+14 [label="entropy = 1.28\nsamples = 96\nvalue = [12, 23, 61]", fillcolor="#8139e585"] ;
+12 -> 14 ;
+}
